@@ -8,12 +8,12 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description='BDD100K to COCO format')
     parser.add_argument(
           "-l", "--label_dir",
-          default="/home/dtilak/tjp/detection/convert_to_tfrecord/bdd100k/labels/",
+          default="/home/dtilak/bdd100k/labels/",
           help="root directory of BDD label Json files",
     )
     parser.add_argument(
           "-s", "--save_path",
-          default="/home/dtilak/tjp/detection_maskrcnn/bdd_to_coco_converted_labels_with_drivable_area/",
+          default="/home/dtilak/bdd_to_coco_converted_labels/",
           help="path to save coco formatted label file",
     )
     return parser.parse_args()
